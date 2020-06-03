@@ -1,0 +1,25 @@
+{
+  "name": "chronostamp-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc && node build/index.js",
+    "compile": "rimraf build && tsc",
+    "watch-and-run": "ts-node-dev --respawn -- src/index.ts"
+  },
+  "author": "Enrico Zanardo",
+  "license": "MIT",
+  "dependencies": {
+    "@types/express": "^4.17.6",
+    "express": "^4.17.1",
+    "path": "^0.12.7",
+    "stripe": "^8.56.0",
+    "typescript": "^3.9.3"
+  },
+  "devDependencies": {
+    "@types/node": "^14.0.9",
+    "@types/stripe": "^7.13.23",
+    "ts-node-dev": "^1.0.0-pre.44"
+  }
+}

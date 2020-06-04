@@ -3,6 +3,7 @@ const express = require('express');
 const cors = require('cors');
 
 import apiRouter from './routes';
+import { PORT } from './config';
 
 const app = express();
 
@@ -11,7 +12,7 @@ app.use(cors());
 app.options('*', cors());
 app.use(apiRouter);
 
-const port = 8181;
+const port = PORT || 30466;
 app.listen(port, () => {
   console.log(`Server listening on port ${port}`);
 });

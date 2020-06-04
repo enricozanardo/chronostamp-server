@@ -12,7 +12,7 @@ app.use(cors());
 app.options('*', cors());
 app.use(apiRouter);
 
-const port = PORT || 30466;
+const port = PORT || 12844;
 app.listen(port, () => {
   console.log(`Server listening on port ${port}`);
 });

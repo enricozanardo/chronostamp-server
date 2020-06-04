@@ -12,7 +12,7 @@ app.use(express.json());
 app.use(cors());
 app.options('*', cors());
 app.use(routes_1.default);
-const port = config_1.PORT || 30466;
+const port = config_1.PORT || 12844;
 app.listen(port, () => {
     console.log(`Server listening on port ${port}`);
 });
